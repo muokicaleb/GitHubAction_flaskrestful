@@ -12,7 +12,7 @@ RUN pip3 --default-timeout=200  install -r requirements.txt
 # Copy the current directory contents into the container at /app 
 ADD . /app
 
-USER user
+
 EXPOSE 5000
 # run the command to start uWSGI
 
