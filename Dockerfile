@@ -1,6 +1,5 @@
 # Use the Python3.7.8-stretch
 FROM python:3.7.8-stretch
-USER joker
 
 # Set the working directory to /app
 WORKDIR /app
@@ -18,7 +17,7 @@ EXPOSE 5000
 # run the command to start uWSGI
 
 
-RUN chmod 755 ./start.sh
-CMD ["./start.sh"]
+RUN chmod +x /app/start.sh
+CMD ["/app/start.sh"]
 
 

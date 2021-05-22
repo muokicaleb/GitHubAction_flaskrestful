@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-uwsgi --ini app.ini
+uwsgi --ini ./app.ini
