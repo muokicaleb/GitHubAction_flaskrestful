@@ -13,6 +13,9 @@ jobs:
       - name: Setup docker
         uses: ./actions
 
+      - name: Run requirments install
+        run: pip3 install -r requirments.txt
+
       - name: Run Python unit tests
         run: python3 -u -m unittest tests.py
         
