@@ -17,6 +17,6 @@ EXPOSE 5000
 # run the command to start uWSGI
 
 RUN chmod +x ./start.sh
-CMD ["uwsgi --ini app.ini"]
+CMD ["uwsgi --ini ./app.ini"]
 
 
