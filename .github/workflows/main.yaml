@@ -13,13 +13,9 @@ jobs:
       - name: Setup docker
         uses: ./actions
 
+      - name: Install dependencies
+        run: pip3 install -r requirements.txt 
 
-  test:
-    name: test setup
-    runs-on: ubuntu-latest
-    container:
-      image: ../../Dockerfile
-    steps:
       - name: Run Python unit tests
         run: python3 -u -m unittest ./tests.py
         
