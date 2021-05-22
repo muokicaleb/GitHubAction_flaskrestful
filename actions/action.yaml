@@ -6,7 +6,6 @@ author: "muokicaleb@tuta.io"
 runs:
   using: "docker"
   image: "../Dockerfile"
-  pre-entrypoint: "../unittest.sh"
 
 branding:
   icon: "settings"

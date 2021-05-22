@@ -14,9 +14,11 @@ ADD . /app
 
 
 EXPOSE 5000
+
+
+
+
 # run the command to start uWSGI
-
-
 RUN chmod +x /app/start.sh
 CMD ["/app/start.sh"]
 
