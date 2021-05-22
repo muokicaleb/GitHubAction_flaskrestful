@@ -1,0 +1,19 @@
+name: A workflow for Github Actions Tutorial
+on: push
+
+jobs:
+  build:
+    name: main workflow
+    runs-on: ubuntu-latest
+    steps:
+
+      - name:  community-developed Action
+        uses: actions/checkout@v1
+
+      - name: Setup docker
+        uses: ./actions
+
+      - name: Run Python unit tests
+        run: python3 -u -m unittest tests.py
+        
+          

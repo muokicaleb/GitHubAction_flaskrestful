@@ -1,5 +1,5 @@
-# Use the Python3.7-alpine
-FROM python:3.7-alpine
+# Use the Python3.7.8-stretch
+FROM python:3.7.8-stretch
 
 # Set the working directory to /app
 WORKDIR /app

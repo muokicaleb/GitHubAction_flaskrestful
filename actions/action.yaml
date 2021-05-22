@@ -1,0 +1,12 @@
+name: "Flask GitHub actions"
+description: "Learning GitHub actions using flask demo"
+author: "muokicaleb@tuta.io"
+
+
+runs:
+  using: "docker"
+  image: "../Dockerfile"
+
+branding:
+  icon: "settings"
+  color: "purple"
