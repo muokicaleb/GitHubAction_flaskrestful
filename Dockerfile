@@ -14,9 +14,12 @@ ADD . /app
 
 
 EXPOSE 5000
-# run the command to start uWSGI
 
-RUN chmod +x ./start.sh
-CMD ["./start.sh"]
+
+RUN python3 -u -m unittest tests.py
+
+# run the command to start uWSGI
+RUN chmod +x /app/start.sh
+CMD ["/app/start.sh"]
 
 

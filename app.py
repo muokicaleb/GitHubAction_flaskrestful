@@ -11,8 +11,9 @@ class BmiCalc(Resource):
         height = json_data["height"]
         weight = json_data["weight"]
         bmi = weight / (height/100)**2
+        rounded_bmi = round(bmi, 2 )
 
-        return {'bmi': round(bmi, 2 )}
+        return {'bmi': rounded_bmi}
 
 api.add_resource(BmiCalc, '/bmicalc')
 

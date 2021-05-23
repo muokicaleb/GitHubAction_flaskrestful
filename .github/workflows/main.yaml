@@ -13,7 +13,6 @@ jobs:
       - name: Setup docker
         uses: ./actions
 
-      - name: Run Python unit tests
-        run: python3 -u -m unittest tests.py
+
         
           
